@@ -1,2 +1,5 @@
 # Ignoring the images folder and all in there
 images/
+
+# Ignoring NPM modules path and all inside
+node_modules/
