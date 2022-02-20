@@ -1,17 +1,7 @@
+import MediaPlayer from './MediaPlayer';
+
 const video = document.querySelector('video');
 const button = document.querySelector('button');
-
-class MediaPlayer {
-	constructor(config) {
-		this.media = config.element;
-	}
-
-	play = () => this.media.play();
-	pause = () => this.media.pause();
-
-	togglePlayPause = () => (this.media.paused ? this.play() : this.pause());
-}
-
 const player = new MediaPlayer({ element: video });
 
 button.onclick = () => player.togglePlayPause();

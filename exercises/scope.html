@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Scope</title>
+	</head>
+	<body>
+		<a href="./../index.html">Go back</a>
+		<p>
+			<em> Open the console </em>
+		</p>
+
+		<script>
+			// Global Scope
+			// Se puede llamar desde la consola con window.message por que estamos en el scope de la ventana
+			// var message = 'Him, guy!';
+			// var $ = function (message) {
+			// 	console.log('I say:', message);
+			// };
+
+			// Function Scope
+
+			// function printNumbers() {
+			// 	var i;
+			// 	for (i = 0; i < 10; i++) {
+			// 		function eventuallyPrintNumber(num) {
+			// 			setTimeout(() => {
+			// 				console.log(i);
+			// 			}, 1000);
+			// 		}
+			// 		eventuallyPrintNumber(i);
+			// 	}
+			// }
+
+			// printNumbers();
+
+			// Block Scope
+
+			// function printNumbers() {
+			// 	for (let i = 0; i < 10; i++) {
+			// 		setTimeout(() => {
+			// 			console.log(i);
+			// 		}, 1000);
+			// 	}
+			// }
+
+			// printNumbers();
+
+			// Module Scope
+		</script>
+	</body>
+</html>
